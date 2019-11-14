@@ -8,10 +8,17 @@ services:
     networks:
       - private-net
       - public-net
+  goserver-redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - private-net
   goserver:
     image: goserver:latest
     depends_on:
       - "goserversaml"
+      - "goserver-redis"
     ports:
       - "8001:8001"
     networks:

@@ -6,6 +6,7 @@ require (
 	github.com/c-bata/go-prompt v0.2.3
 	github.com/crewjam/saml v0.0.0-20190521120225-344d075952c9
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+	github.com/go-redis/redis/v7 v7.0.0-beta.4 // indirect
 	github.com/jonboulle/clockwork v0.1.0 // indirect
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
