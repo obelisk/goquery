@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"math/rand"
+	"net/http"
 	"strings"
 	"time"
 )
@@ -31,4 +31,3 @@ func doPut(url string, metadata string) error {
 	}
 	return nil
 }
-

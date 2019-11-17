@@ -16,19 +16,12 @@ import (
 
 var ENROLL_SECRET string
 
-// TODO In memory structures to be removed
-// Maps Node Key -> UUID
-
-// Maps Node Key -> Map of Query Name -> Query struct
-var queryMap map[string]map[string]Query
-
 // The new DB Wrapper stuff
 var db GoServerDatabaseWrapper
 
 func main() {
 	ENROLL_SECRET = "somepresharedsecret"
 	enableSSO := true
-	queryMap = make(map[string]map[string]Query)
 	db = GoServerDatabaseWrapper{}
 	db.Init()
 
